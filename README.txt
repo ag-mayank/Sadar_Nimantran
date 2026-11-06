@@ -5,12 +5,12 @@
 - `assets/wedding-photo-1.jpg` — first uploaded wedding photo.
 - `assets/wedding-photo-2.jpg` — second uploaded wedding photo.
 - `assets/wedding-photo-3.jpg` — third uploaded wedding photo.
-- `navrai_majhi.mp3` — music played when guests open the invitation.
+- `assets/final song.mp3` — music played when guests open the invitation; use the play/pause button to control it.
 
 ## Run locally
 1. Extract this ZIP.
 2. Open `index.html` in Chrome, or open the folder in VS Code and use Live Server.
-3. Keep the `assets` folder and `navrai_majhi.mp3` beside `index.html`; the gallery and music use these relative paths.
+3. Keep the `assets` folder beside `index.html`; the gallery and music use files in this folder.
 
 ## Customize
 Open `index.html` in a text editor or VS Code.
@@ -23,7 +23,7 @@ Find `const wedding = {` near the bottom of the file and edit:
 
 You can change the text and styling in the `<style>` section.
 To replace a gallery photo, overwrite the matching JPG in `assets` while keeping its filename.
-To use a different song, replace `navrai_majhi.mp3` with your MP3 and keep the same filename.
+To use a different song, replace `assets/final song.mp3` and keep the same filename.
 
 ## Note
 The website does not currently include an RSVP form.

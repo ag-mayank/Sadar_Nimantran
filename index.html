@@ -10,7 +10,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=DM+Sans:wght@400;500;600&display=swap');
 :root{--wine:#7b2536;--deep:#501827;--gold:#c99b52;--cream:#fff8ed;--ink:#593b35}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f8eee2;color:var(--ink);font-family:'DM Sans',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scrollbar-width:none}html::-webkit-scrollbar{display:none}body{margin:0;background:#f8eee2;color:var(--ink);font-family:'DM Sans',sans-serif}
 button,input,select,textarea{font:inherit}.page{max-width:520px;margin:auto;background:var(--cream);min-height:100vh;overflow:hidden;box-shadow:0 0 45px #542b2418}
 .cover{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:34px 25px;position:relative;isolation:isolate;background:linear-gradient(145deg,#fff7e9,#f3dfc8 55%,#f8ebdc)}
 .cover:before,.cover:after{content:"";position:absolute;width:250px;height:250px;border:1px solid #c99b5266;border-radius:50%;z-index:-1}.cover:before{top:-115px;left:-110px}.cover:after{bottom:-120px;right:-100px}
@@ -33,6 +33,7 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--wine);font
 .first-page-heading{height:auto;padding:16px 10px 24px;background:#f4e8d9;text-align:center}
 .first-page-heading .shubh-vivah{color:#a67b35;font-family:Georgia,serif;font-size:clamp(17px,4.2vw,24px);font-weight:600;letter-spacing:1px}
 .first-page-heading .couple-heading{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;white-space:nowrap;color:#913c3c;font-family:Georgia,serif;font-style:italic;font-size:clamp(16px,4.7vw,27px);line-height:1.2}
+.first-page-heading .couple-heading>span{display:block}
 .first-page-heading .weds-text{color:#a67b35;font-size:.62em;font-style:italic;font-weight:normal}
 .first-page-heading .gold-ornament{display:flex;align-items:center;justify-content:center;gap:12px;color:#b48a43;font-size:22px;margin:12px auto 8px}
 .first-page-heading .gold-ornament span{display:block;width:clamp(44px,12vw,80px);height:1px;background:#b48a43}
@@ -96,6 +97,7 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--wine);font
 .venue-ornament b{font-size:22px;font-weight:normal}
 .venue-image-frame{width:100%;max-width:275px;aspect-ratio:.78;margin:0 auto 8px;overflow:hidden;border:3px solid #bd984f;border-radius:150px 150px 5px 5px;background:#f1e4ce;box-shadow:0 5px 10px rgba(91,62,31,.15);position:relative}
 .venue-photo{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+.day-venue-section .venue-photo{object-position:64% center}
 .venue-name{font-family:Georgia,serif;font-size:24px;font-weight:normal;font-style:italic;color:#913d3d;margin:0 0 5px}
 .venue-address{font-family:Georgia,serif;font-size:13px;font-style:italic;color:#947c68;margin:5px 0 15px}
 .venue-name strong{font-weight:700}
@@ -187,7 +189,7 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
             <h3>Day 1</h3>
             <div class="events-grid">
               <article class="event-card">
-                <div class="event-image" aria-hidden="true"></div>
+                <div class="event-image"><img class="event-photo" src="assets/lagan.png" alt="Lagan ceremony"></div>
                 <h3>Lagan</h3>
                 <div class="event-details">
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
@@ -196,7 +198,7 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
                 </div>
               </article>
               <article class="event-card">
-                <div class="event-image" aria-hidden="true"></div>
+                <div class="event-image"><img class="event-photo" src="assets/bhaat.png" alt="Bhaat ceremony"></div>
                 <h3>Bhaat</h3>
                 <div class="event-details">
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
@@ -205,7 +207,7 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
                 </div>
               </article>
               <article class="event-card">
-                <div class="event-image" aria-hidden="true"></div>
+                <div class="event-image"><img class="event-photo" src="assets/mhendi.png" alt="Mehendi celebration"></div>
                 <h3>Mehendi</h3>
                 <div class="event-details">
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
@@ -214,7 +216,7 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
                 </div>
               </article>
               <article class="event-card">
-                <div class="event-image" aria-hidden="true"></div>
+                <div class="event-image"><img class="event-photo" src="assets/sangeet.png" alt="Sangeet celebration"></div>
                 <h3>Sangeet</h3>
                 <div class="event-details">
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
@@ -223,7 +225,7 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
                 </div>
               </article>
               <article class="event-card day1-dinner">
-                <div class="event-image" aria-hidden="true"></div>
+                <div class="event-image"><img class="event-photo" src="assets/dinner.png" alt="Wedding dinner"></div>
                 <h3>Dinner</h3>
                 <div class="event-details">
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
@@ -238,7 +240,8 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
               <div class="venue-kicker">आयोजन स्थल</div>
               <h2 class="venue-title">The Venue</h2>
               <div class="venue-ornament"><span></span><b>✦</b><span></span></div>
-              <div class="venue-image-frame" role="img" aria-label="Venue image to be added">
+              <div class="venue-image-frame">
+                <img class="venue-photo" src="assets/shenai.png" alt="Shehnai Banquet Hall">
               </div>
               <h3 class="venue-name"><strong>Shehnai Banquet Hall</strong></h3>
               <div class="venue-location">Aligarh</div>
@@ -250,8 +253,8 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
             <h3>Day 2</h3>
             <div class="events-grid">
               <article class="event-card">
-                <div class="event-image" aria-hidden="true"></div>
-                <h3>Haldi Carnival</h3>
+                <div class="event-image"><img class="event-photo" src="assets/haldi%20carnival.png" alt="Rang-e-Haldi"></div>
+                <h3>Rang-e-Haldi</h3>
                 <div class="event-details">
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>3rd December 2026</strong></div>
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>12:00 PM</strong></div>
@@ -259,7 +262,7 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
                 </div>
               </article>
               <article class="event-card">
-                <div class="event-image" aria-hidden="true"></div>
+                <div class="event-image"><img class="event-photo" src="assets/cocktail.png" alt="Cocktail celebration"></div>
                 <h3>CockTail</h3>
                 <div class="event-details">
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>3rd December 2026</strong></div>
@@ -455,8 +458,8 @@ async function startMusic(){
       const AudioContextClass=window.AudioContext||window.webkitAudioContext;
       musicContext=new AudioContextClass();
       const resumePromise=musicContext.resume();
-      const response=await fetch("assets/song1.mp3");
-      if(!response.ok)throw new Error(`Could not load song1.mp3 (${response.status}).`);
+      const response=await fetch("assets/final%20song.mp3");
+      if(!response.ok)throw new Error(`Could not load final song.mp3 (${response.status}).`);
       musicBuffer=await musicContext.decodeAudioData(await response.arrayBuffer());
       await resumePromise;
     }else{
@@ -471,9 +474,9 @@ async function startMusic(){
     button.textContent="♫ Pause music";
     button.setAttribute("aria-pressed","true");
   }catch(error){
-    console.error("Could not play song1.mp3:",error);
+    console.error("Could not play final song.mp3:",error);
     button.textContent="♫ Retry music";
-    button.title="Could not play song1.mp3. Check that it is in the assets folder.";
+    button.title="Could not play final song.mp3. Check that it is in the assets folder.";
   }finally{
     musicLoading=false;
   }
