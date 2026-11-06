@@ -32,7 +32,7 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--wine);font
 .first-page{width:100%;min-height:0;padding:0;overflow:hidden;background:#f4e8d9}
 .first-page-heading{height:auto;padding:16px 10px 24px;background:#f4e8d9;text-align:center}
 .first-page-heading .shubh-vivah{color:#a67b35;font-family:Georgia,serif;font-size:clamp(17px,4.2vw,24px);font-weight:600;letter-spacing:1px}
-.first-page-heading .couple-heading{display:flex;align-items:baseline;justify-content:center;flex-wrap:nowrap;gap:clamp(4px,1vw,10px);white-space:nowrap;color:#913c3c;font-family:Georgia,serif;font-style:italic;font-size:clamp(16px,4.7vw,27px);line-height:1.2}
+.first-page-heading .couple-heading{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;white-space:nowrap;color:#913c3c;font-family:Georgia,serif;font-style:italic;font-size:clamp(16px,4.7vw,27px);line-height:1.2}
 .first-page-heading .weds-text{color:#a67b35;font-size:.62em;font-style:italic;font-weight:normal}
 .first-page-heading .gold-ornament{display:flex;align-items:center;justify-content:center;gap:12px;color:#b48a43;font-size:22px;margin:12px auto 8px}
 .first-page-heading .gold-ornament span{display:block;width:clamp(44px,12vw,80px);height:1px;background:#b48a43}
@@ -51,7 +51,7 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--wine);font
 .invitation-names .weds{font-family:Georgia,serif;font-size:27px;font-style:italic;font-weight:bold;color:#b18a43;margin:18px 0}
 .invitation-names .name-divider{color:#bd9650;margin:20px auto;font-size:21px;letter-spacing:8px}
 .invitation-names .lotus-corners{position:absolute;left:14px;right:14px;bottom:7px;display:flex;justify-content:space-between;color:#b87863;font-size:26px}
-@media(max-width:480px){.invitation-names{padding:42px 14px 44px;margin:10px}.invitation-names .ganesha-image img{width:115px;height:115px}.invitation-names .ganesha-mantra{font-size:20px}.invitation-names .sanskrit-shloka{font-size:14px}.invitation-names .family-blessing{font-size:17px}.invitation-names .family-details{font-size:13px}}
+@media(max-width:480px){.invitation-names{padding:42px 14px 44px;margin:10px}.invitation-names .ganesha-image img{width:115px;height:115px}.invitation-names .ganesha-mantra{font-size:20px}.invitation-names .sanskrit-shloka{font-size:14px}.invitation-names .family-blessing{font-size:17px}.invitation-names .family-details{font-size:13px}.invitation-names .family-name{font-size:11px;white-space:nowrap}}
 .wedding-events-section{background:#fff8ed;padding:45px 18px;color:#49352e}
 .events-heading{text-align:center;margin-bottom:30px}
 .events-kicker{color:#ae8746;font-size:11px;letter-spacing:4px}
@@ -156,11 +156,11 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
         <div class="family-blessing">With the blessings of our elders<br>and the love of our families</div>
         <div class="name-divider" aria-hidden="true">──── ❀ ────</div>
         <div class="couple">
-          <div class="person-name">DR. <span id="brideName">Anjali Agarwal</span></div>
-          <p class="family-details">D/o Mrs. Shikha Agarwal &amp; Mr. Satish Agarwal<br>Grand D/o Late Smt. Bhagwan Devi &amp; Late Shri Shyam Sundar Agarwal<br>Mishri Lal Colony, Aligarh</p>
+          <div class="person-name">Dr. <span id="brideName">Anjali Agarwal</span></div>
+          <p class="family-details">D/o Mrs. Shikha Agarwal &amp; Mr. Satish Agarwal<br>Grand D/o Late Smt. Bhagwan Devi &amp; <span class="family-name">Late Shri Shyam Sundar Agarwal</span><br>Mishri Lal Colony, Aligarh</p>
           <div class="weds">weds</div>
-          <div class="person-name">DR. <span id="groomName">Ankur Singhal</span></div>
-          <p class="family-details">S/o Dr. Remi Singhal &amp; Dr. Sanjay Kumar Singhal<br>Grand S/o Late Smt. Ramkali Devi &amp; Late Shri Kailash Prasad Gupta<br>Ramesh Vihar Colony, Aligarh</p>
+          <div class="person-name">Dr. <span id="groomName">Ankur Singhal</span></div>
+          <p class="family-details">S/o Dr. Renu Singhal &amp; Dr. Sanjay Kumar Singhal<br>Grand S/o Late Smt. Ramkali Devi &amp; <span class="family-name">Late Shri Kailash Prasad Gupta</span><br>Ramesh Vihar Colony, Aligarh</p>
         </div>
         <div class="lotus-corners" aria-hidden="true"><span>❀</span><span>❀</span></div>
       </section>
