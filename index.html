@@ -68,13 +68,13 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--wine);font
 .event-day-with-events{padding-bottom:18px}
 .event-day-with-events .events-grid{margin-top:16px}
 .day-venue-section{width:100%;border:1px solid #d5b77c}
-.day-one .day1-dinner{grid-column:1/-1;width:calc(50% - 12px);justify-self:center}
 .events-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:850px;margin:auto}
 .wedding-events-section .event-card{background:#fffaf1;border:1px solid #d5b77c;border-radius:7px;padding:10px;text-align:center;box-shadow:0 5px 15px rgba(90,60,30,.08);position:relative}
 .event-image{width:100%;aspect-ratio:1/.9;border:1px solid #c9a45e;border-radius:5px;background:#f5ead7;overflow:hidden;margin-bottom:15px}
 .event-photo{display:block;width:100%;height:100%;object-fit:cover}
 .event-hindi{font-family:serif;font-size:14px;color:#a23d38;margin-bottom:3px}
 .wedding-events-section .event-card h3{font-family:Georgia,serif;font-size:25px;font-style:italic;font-weight:normal;color:#51392f;margin:3px 0 15px}
+.wedding-events-section .event-card .event-title-compact{font-size:clamp(13px,4vw,18px);white-space:nowrap}
 .event-details{border-top:1px solid #dfc79e;border-bottom:1px solid #dfc79e;padding:12px 5px;margin:12px 0}
 .event-detail{display:grid;grid-template-columns:20px 45px 1fr;align-items:center;gap:5px;text-align:left;margin:9px 0;font-family:Georgia,serif}
 .wedding-events-section .event-icon{color:#a94c34;font-size:17px;text-align:center}
@@ -83,7 +83,7 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:var(--wine);font
 .event-description{font-family:Georgia,serif;font-size:13px;line-height:1.6;font-style:italic;color:#826b59;padding:0 8px;min-height:60px}
 .event-location{font-family:Georgia,serif;font-size:12px;margin:12px 0 8px;color:#51392f}
 .event-location span{color:#a64a31;margin-right:5px}
-@media(max-width:600px){.wedding-events-section{padding:30px 12px}.events-grid{grid-template-columns:1fr;gap:22px;max-width:360px}.day-one .day1-dinner{grid-column:auto;width:100%}.wedding-events-section .event-card{padding:11px}.wedding-events-section .event-card h3{font-size:27px}.event-detail strong{font-size:14px}}
+@media(max-width:600px){.wedding-events-section{padding:30px 12px}.events-grid{grid-template-columns:1fr;gap:22px;max-width:360px}.wedding-events-section .event-card{padding:11px}.wedding-events-section .event-card h3{font-size:27px}.event-detail strong{font-size:14px}}
 .details{background:#f7ead9;padding-bottom:24px}.event-card{border:1px solid #d7b77f;padding:25px 15px;margin:16px 0;background:#fffaf1}
 .event-card h3{font-family:'Cormorant Garamond',serif;color:var(--wine);font-size:32px;font-weight:600;margin:7px}
 .event-meta{font-size:16px;font-weight:600;line-height:1.9}.event-icon{font-size:25px;color:var(--gold)}
@@ -211,20 +211,10 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
               <article class="event-card">
                 <div class="event-image"><img class="event-photo" src="assets/mhendi.png" alt="Mehendi celebration"></div>
                 <div class="event-hindi">मेहंदी</div>
-                <h3>Mehendi</h3>
+                <h3 class="event-title-compact">Mhefil-e-Mehendi</h3>
                 <div class="event-details">
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>3:00 PM</strong></div>
-                  <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>Shehnai Banquet Hall, Aligarh</strong></div>
-                </div>
-              </article>
-              <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/sangeet.png" alt="Sangeet celebration"></div>
-                <div class="event-hindi">संगीत</div>
-                <h3>Sangeet</h3>
-                <div class="event-details">
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>2nd December 2026</strong></div>
-                  <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>4:00 PM</strong></div>
                   <div class="event-detail"><span class="event-icon">⌖</span><span class="detail-label">VENUE</span><strong>Shehnai Banquet Hall, Aligarh</strong></div>
                 </div>
               </article>
@@ -268,9 +258,9 @@ footer{text-align:center;padding:32px 20px;background:var(--deep);color:#f7e5c8;
                 </div>
               </article>
               <article class="event-card">
-                <div class="event-image"><img class="event-photo" src="assets/cocktail.png" alt="Cocktail celebration"></div>
-                <div class="event-hindi">कॉकटेल</div>
-                <h3>CockTail</h3>
+                <div class="event-image"><img class="event-photo" src="assets/sangeet.png" alt="Sangeet celebration"></div>
+                <div class="event-hindi">संगीत</div>
+                <h3>Sangeet</h3>
                 <div class="event-details">
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">DATE</span><strong>3rd December 2026</strong></div>
                   <div class="event-detail"><span class="event-icon">◷</span><span class="detail-label">TIME</span><strong>6:00 PM</strong></div>
